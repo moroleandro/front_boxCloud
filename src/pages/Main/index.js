@@ -28,7 +28,9 @@ export default class Main extends Component {
     return (
         <div id="main-container">
         <form onSubmit={this.handleSubmit}>
+        <a href="https://br.linkedin.com/in/moroleandro" target="_blank">
           <img src={logo} alt="" id="logo-main"/>
+          </a>
           <input value={this.state.newBox} onChange={this.handleInputChange} placeholder="Nome da box (pasta)" />
           <button type="submit">C R I A R</button>
         </form>

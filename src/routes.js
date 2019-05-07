@@ -7,7 +7,7 @@ import Box from'./pages/Box';
 const Routes = () => (
     <BrowserRouter>
     <Switch>
-        <Route path="/" component={Main} />
+        <Route path="/" exact component={Main} />
         <Route path="/box/:id" component={Box} />
     </Switch>
     </BrowserRouter>

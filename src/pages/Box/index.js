@@ -6,7 +6,7 @@ import Dropzone from 'react-dropzone';
 import socket from 'socket.io-client';
 import "./style.css";
 import { MdInsertDriveFile } from 'react-icons/md';
-import logo from "../../assets/logo.png";
+import logo from "../../assets/logo2.png";
 
 export default class Box extends Component {
   state = { box:{} };
@@ -40,9 +40,10 @@ export default class Box extends Component {
   render() {
     return (
       <div id="box-container">
+       <a href="/">Voltar</a>
       <header>
-      <img src={logo} alt="" />
-      <h3>{this.state.box.title}</h3>
+      <img src={logo} alt="" id="logo" />
+      <h3>./{this.state.box.title}</h3>
       </header>
 
       <Dropzone onDropAccepted={this.handleUpload}>

@@ -1,6 +1,6 @@
 #box-container{
  max-width: 900px;
- margin: 50px auto 0;   
+ margin: 30px auto 0;   
 }
 
 #box-container header{
@@ -9,11 +9,15 @@
     align-items: center;
 }
 
-#box-container header h1{
-    font-size: 21px;
+#box-container header h3{
+    font-size: 20px;
     padding-left: 15px;
     margin-left: 15px;
     border-left: 1px solid #ddd;
+}
+
+#logo{
+    width: 250px;
 }
 
 #box-container header button png{
