@@ -10,14 +10,42 @@
 }
 
 #box-container header h3{
-    font-size: 20px;
+    font-size: 18px;
     padding-left: 15px;
     margin-left: 15px;
     border-left: 1px solid #ddd;
 }
 
 #logo{
-    width: 250px;
+    width: 160px;
+}
+
+#button-share{
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    background: #7fdf53;
+    font-size: 16 px;
+    padding: 0 20px;
+    margin-top: 10px;
+    color: #FFF;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#button-back{
+    width: 50%;
+    height: 40px;
+    border-radius: 4px;
+    background: #009de1;
+    font-size: 16 px;
+    padding: 0 20px;
+    margin-top: 10px;
+    color: #FFF;
+    border: 0;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 #box-container header button png{

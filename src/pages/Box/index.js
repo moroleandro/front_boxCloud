@@ -5,7 +5,7 @@ import pt from 'date-fns/locale/pt';
 import Dropzone from 'react-dropzone';
 import socket from 'socket.io-client';
 import "./style.css";
-import { MdInsertDriveFile } from 'react-icons/md';
+import { MdInsertDriveFile , MdShare , MdKeyboardBackspace  } from 'react-icons/md';
 import logo from "../../assets/logo2.png";
 
 export default class Box extends Component {
@@ -27,7 +27,7 @@ export default class Box extends Component {
     });
   };
 
-  handleUpload = (files) =>{
+  handleUpload = files =>{
     files.forEach(file => {
       const data = new FormData();
       const box = this.props.match.params.id;
@@ -40,9 +40,10 @@ export default class Box extends Component {
   render() {
     return (
       <div id="box-container">
-       <a href="/">Voltar</a>
       <header>
+      <a href="/">
       <img src={logo} alt="" id="logo" />
+      </a>
       <h3>./{this.state.box.title}</h3>
       </header>
 
@@ -50,7 +51,7 @@ export default class Box extends Component {
         {({ getRootProps, getInputProps }) => (
           <div className="upload" {...getRootProps()}>
           <input {...getInputProps()} />
-          <p>Arraste arquivos ou clique aqui</p>
+          <p><MdInsertDriveFile size={12} color="#ddd" /> Arraste arquivos ou clique aqui</p>
           </div>
         )}
       </Dropzone>
@@ -70,7 +71,8 @@ export default class Box extends Component {
         )) }
         
       </ul>
-
+      <a href="/"><button id="button-back"><MdKeyboardBackspace size={15} color="white" />Voltar</button></a>
+      <button id="button-share"><MdShare size={15} color="white" />Compartilhar</button>
       </div>
     );
   }
